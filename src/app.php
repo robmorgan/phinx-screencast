@@ -13,10 +13,10 @@ $app['debug'] = true;
 
 // Doctrine (db)
 $app['db.options'] = array(
-    'driver'   => 'pdo_pgsql',
+    'driver'   => 'pdo_mysql',
     'host'     => 'localhost',
     'dbname'   => 'phinx_screencast',
-    'user'     => 'postgres',
+    'user'     => 'root',
     'password' => '',
 );
 
