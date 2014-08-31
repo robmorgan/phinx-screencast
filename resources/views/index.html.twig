@@ -1,0 +1,9 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+  <h3>Messages</h3>
+  {% for post in posts %}
+      <h4>Posted by <em>{{ post.author }}</em> on {{ post.created_at|date("F jS \\a\\t g:ia") }}</h4>
+      <p>{{ post.message }}</p>
+  {% endfor %}
+{% endblock %}

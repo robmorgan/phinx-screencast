@@ -1,0 +1,20 @@
+{
+  "name"        : "robmorgan/phinx-screencast",
+  "type"        : "app",
+  "description" : "A simple Silex project to accompany the Phinx screencast.",
+  "keywords"    : ["app", "screencast"],
+  "homepage"    : "https://github.com/robmorgan/phinx-screencast",
+  "license"     : "MIT",
+  "authors"     : [
+      {
+          "name"  : "Rob Morgan",
+          "email" : "robbym@gmail.com"
+      }
+  ],
+    "require": {
+        "silex/silex": "~1.2",
+        "doctrine/dbal": "2.3.*",
+        "twig/twig": "1.*",
+        "robmorgan/phinx": "*"
+    }
+}
