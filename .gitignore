@@ -1,1 +1,5 @@
 migrations/
+phinx.yml
+composer.phar
+vendor/
+
