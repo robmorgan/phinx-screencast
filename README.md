@@ -9,3 +9,8 @@ This is the sample project that accompanies the Phinx screencast. Please visit [
 * Git
 * PHP 5.5
 * MySQL and/or Postgres
+
+### Installing the Dependencies
+
+* curl -s https://getcomposer.org/installer | php
+* php composer.phar install
