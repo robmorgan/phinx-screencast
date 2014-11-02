@@ -50,7 +50,7 @@ $app->post('/submit', function (Request $request) use ($app) {
         'message' => $request->get('message'),
         'created_at' => date('Y-m-d H:i:s')
     ));
-    $app['session']->getFlashBag()->add('notice', 'Profile updated');
+    $app['session']->getFlashBag()->add('notice', 'Post created successfully');
     return $app->redirect('/');
 });
 
