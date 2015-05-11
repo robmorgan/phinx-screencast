@@ -15,6 +15,6 @@ This is the sample project that accompanies the Phinx screencast. Please visit [
 * curl -s https://getcomposer.org/installer | php
 * php composer.phar install
 
-### Starting the Application using PHP's builtin Webserver
+### Starting the Application using PHP's Built-in Webserver
 
  * php -S localhost:8080 -t web web/index.php
