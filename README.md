@@ -8,9 +8,13 @@ This is the sample project that accompanies the Phinx screencast. Please visit [
 
 * Git
 * PHP 5.5
-* MySQL and/or Postgres
+* MySQL and/or Postgres (`pdo_mysql` or `pdo_pgsql`)
 
 ### Installing the Dependencies
 
 * curl -s https://getcomposer.org/installer | php
 * php composer.phar install
+
+### Starting the Application using PHP's builtin Webserver
+
+ * php -S localhost:8080 -t web web/index.php
