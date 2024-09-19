@@ -9,6 +9,12 @@
 <body class="bg-gray-100 font-sans">
     <div class="container mx-auto px-4 py-8 max-w-2xl">
         <h1 class="text-4xl font-bold mb-8 text-center text-blue-600">Phinx Guestbook</h1>
+
+        <?php if (isset($flashMessage)): ?>
+            <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
+                <span class="block sm:inline"><?= htmlspecialchars($flashMessage) ?></span>
+            </div>
+        <?php endif; ?>
         
         <div class="bg-white shadow-md rounded-lg p-6 mb-8">
             <h2 class="text-2xl font-semibold mb-4 text-gray-800">Messages</h2>
