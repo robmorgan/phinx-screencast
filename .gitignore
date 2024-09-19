@@ -1,5 +1,5 @@
-migrations/
+db/
+phinx.php
 phinx.yml
 composer.phar
 vendor/
-

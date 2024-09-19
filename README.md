@@ -1,20 +1,58 @@
-# [Phinx](http://phinx.org): Sample Project for the Screencast
+# Phinx Screencast Sample Project
 
-This is the sample project that accompanies the Phinx screencast. Please visit [phinx.org](http://phinx.org) for more information.
+![Phinx Screencast](/_docs/phinx-screencast.jpg)
 
-**Remember to check out http://docs.phinx.org for the comprehensive documentation.**
+This repo contains a sample project that accompanies the Phinx Screencast. You can find out more or purchase the
+screencast at [phinx.org](http://phinx.org).
 
-### Requirements
+🙏 Thank you for supporting my work!
 
-* Git
-* PHP 5.5
-* MySQL and/or Postgres (`pdo_mysql` or `pdo_pgsql`)
+## What is Phinx?
 
-### Installing the Dependencies
+[Phinx](http://phinx.org) is a PHP database migration management tool that makes it easy to manage and manipulate
+database schemas. It allows developers to write database migrations using PHP code, making version control of database
+changes straightforward and consistent across different environments.
 
-* curl -s https://getcomposer.org/installer | php
-* php composer.phar install
+## Requirements
 
-### Starting the Application using PHP's Built-in Webserver
+Before you begin, ensure you have the following installed:
 
- * php -S localhost:8080 -t web web/index.php
+- Git
+- PHP 8.2 or higher
+- Sqlite extensions installed
+
+## Getting Started
+
+Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/robmorgan/phinx-screencast.git
+```
+
+Install dependencies using [Composer](https://getcomposer.org):
+
+```bash
+cd phinx-screencast
+composer install
+```
+
+Start the app using PHP's built-in web server:
+
+```sh
+php -S localhost:8080 -t public public/index.php
+```
+
+## Resources
+
+- [Phinx Official Website](http://phinx.org)
+- [Phinx Documentation](http://docs.phinx.org)
+- [Phinx GitHub Repository](https://github.com/cakephp/phinx)
+
+## Contributing
+
+While this is primarily a sample project for educational purposes, suggestions and improvements are welcome. Please
+open an issue or submit a pull request if you have any contributions.
+
+## License
+
+Please refer to the LICENSE file in this repository for licensing information.
