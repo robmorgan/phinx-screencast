@@ -11,12 +11,20 @@ require_once __DIR__ . '/../vendor/autoload.php';
 $app = AppFactory::create();
 
 $db = new SQLite3(__DIR__ . '/../guestbook.db');
-$db->exec('CREATE TABLE IF NOT EXISTS messages (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT,
-    message TEXT,
-    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-)');
+
+// Check if the messages table exists
+$tableExists = $db->querySingle("SELECT name FROM sqlite_master WHERE type='table' AND name='messages'");
+
+if (!$tableExists) {
+    // If the table doesn't exist, set up a route to return an error message
+    $app->get('/', function (Request $request, Response $response) {
+        $response->getBody()->write("The messages table does not exist. Please check you've followed the screencast steps correctly.");
+        return $response->withStatus(500);
+    });
+
+    $app->run();
+    exit;
+}
 
 $app->get('/', function (Request $request, Response $response) use ($db) {
     $messages = $db->query('SELECT * FROM messages ORDER BY created_at DESC');
