@@ -1,6 +1,6 @@
 # Phinx Screencast Sample Project
 
-![Phinx Screencast](/_docs/phinx-screencast.jpg)
+![Phinx Screencast](/_docs/phinx-screencast.png)
 
 This repo contains a sample project that accompanies the Phinx Screencast. You can find out more or purchase the
 screencast at [phinx.org](http://phinx.org).
