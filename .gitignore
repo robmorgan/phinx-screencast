@@ -1,5 +1,5 @@
 migrations/
+guestbook.db
 phinx.yml
 composer.phar
 vendor/
-
