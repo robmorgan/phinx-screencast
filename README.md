@@ -17,9 +17,10 @@ changes straightforward and consistent across different environments.
 
 Before you begin, ensure you have the following installed:
 
-- Git
-- PHP 8.2 or higher
-- Sqlite extensions installed
+- **Git**
+- **PHP 8.2** or higher
+- **Sqlite3**. If your on a Mac, you can install it with `brew install sqlite3`
+- **Composer**
 
 ## Getting Started
 
@@ -38,7 +39,7 @@ composer install
 
 Start the app using PHP's built-in web server:
 
-```sh
+```bash
 php -S localhost:8080 -t public public/index.php
 ```
 
